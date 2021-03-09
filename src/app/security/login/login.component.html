@@ -1,0 +1,25 @@
+<mat-card class="form">
+    
+<h1 mat-dialog-title>Authentification</h1>
+<div mat-dialog-content>
+  <p>
+  <mat-form-field>
+    <mat-label>Nom d'utilisateur</mat-label>
+    <input matInput [(ngModel)]="login" placeholder="saisir votre nom d'utilisateur">
+  </mat-form-field>
+  </p>
+  <p>
+  <mat-form-field>
+    <mat-label>Mot de passe</mat-label>
+    <input matInput type="password" [(ngModel)]="password" placeholder="saisir votre mot de passe">
+  </mat-form-field>
+</p>
+</div>
+<div mat-raised-button style="text-align: center;">
+  <button mat-raised-button (click)="loginClick()" color="primary">Connexion</button>
+</div>
+<div mat-raised-button style="text-align: center;">
+  <button mat-button [routerLink]="[ '/auth/forgotpwd' ]"color="">Mot de passe oublié ?</button>
+  <button mat-button [routerLink]="[ '/auth/signup' ]" color="">Inscription</button>
+</div>
+</mat-card>

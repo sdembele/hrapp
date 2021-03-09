@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>Formulaire Employé</h1>
+<div mat-dialog-content>
+  <p>
+  <mat-form-field>
+    <mat-label>Nom :</mat-label>
+    <input matInput [(ngModel)]="data.ename" placeholder="saisir la valeur ename">
+  </mat-form-field>
+</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker" [(ngModel)]="data.hiredate" placeholder="saisir la valeur hiredate">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+<p>
+  <mat-form-field>
+    <mat-label>Téléphone</mat-label>
+    <input matInput [(ngModel)]="data.empno" placeholder="saisir la valeur empno">
+  </mat-form-field>
+</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()" color="primary">Enregistrer</button>
+  <button mat-button [mat-dialog-close]="data.ename" cdkFocusInitial>Ok</button>
+</div>

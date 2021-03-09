@@ -1,0 +1,47 @@
+<mat-card class="form">
+    
+    <h1 mat-dialog-title>Inscription</h1>
+    <br/>
+    <div mat-dialog-content>
+      <p>
+      <mat-form-field>
+        <mat-label>Prénom</mat-label>
+        <input matInput [(ngModel)]="firstname" placeholder="saisir votre adresse email">
+      </mat-form-field>
+      </p>
+    </div>
+    <div mat-dialog-content>
+        <p>
+        <mat-form-field>
+          <mat-label>Nom</mat-label>
+          <input matInput [(ngModel)]="lastname" placeholder="saisir votre adresse email">
+        </mat-form-field>
+        </p>
+      </div>
+      <div mat-dialog-content>
+        <p>
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input matInput [(ngModel)]="email" placeholder="saisir votre adresse email">
+        </mat-form-field>
+        </p>
+      </div>
+      <div mat-dialog-content>
+        <p>
+        <mat-form-field>
+          <mat-label>Contact</mat-label>
+          <input matInput [(ngModel)]="number" placeholder="saisir votre adresse email">
+        </mat-form-field>
+        </p>
+      </div>
+    
+    <div mat-raised-button style="text-align: center;">
+      <button mat-raised-button  color="primary">Valider</button>
+    </div>
+    
+    <div mat-raised-button style="text-align: center;">
+      <button mat-button [routerLink]="[ '/auth/login' ]"color="">Connexion</button>
+    </div>
+
+</mat-card>
+    

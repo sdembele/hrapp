@@ -1,0 +1,14 @@
+{
+    "personnes": [
+        {"id":1, "nom":"Souleman DEMBELE","date_naissance":"2020-01-01","numero":"+221778580717"},
+        {"id":1, "nom":"Souleman DEMBELE","date_naissance":"2020-01-01","numero":"+221778580717"},
+        {"id":1, "nom":"Souleman DEMBELE","date_naissance":"2020-01-01","numero":"+221778580717"},
+        {"id":1, "nom":"Souleman DEMBELE","date_naissance":"2020-01-01","numero":"+221778580717"}
+    ],
+    "produits": [
+        {"id":1,"nom":"Fruit","type":"","description":"je suis une dcescription"},
+        {"id":1,"nom":"Fruit","type":"","description":"je suis une dcescription"},
+        {"id":1,"nom":"Fruit","type":"","description":"je suis une dcescription"},
+        {"id":1,"nom":"Fruit","type":"","description":"je suis une dcescription"}
+    ]
+}

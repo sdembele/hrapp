@@ -1,0 +1,25 @@
+body {    
+    background-image: url(../../assets/images/bg.jpg);
+    background-size: cover;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.form
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
